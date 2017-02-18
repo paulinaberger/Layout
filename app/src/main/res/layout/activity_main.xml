@@ -58,23 +58,101 @@
             android:layout_height="wrap_content"
              android:background="@color/colorAccent"
              android:id="@+id/tableLayout">
+
              <TableRow
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content" >
+                 android:layout_height="match_parent"
+                 android:gravity="center">
 
                  <TextView
-                     android:layout_width="wrap_content"
+                     android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:inputType="textPersonName"
-                     android:text="WOAH"
-                      android:textColor="@android:color/white"
-                     android:textSize="80sp"
+                     android:text="Passport"
+                     android:textAlignment="center"
+                     android:textColor="@android:color/white"
+                     android:textSize="20sp"
                      android:id="@+id/NameField" />
              </TableRow>
 
              <TableRow
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:inputType="textPersonName"
+                     android:text="Name"
+                     android:gravity="center"
+                     android:textColor="@android:color/white"
+                     android:ems="10"
+                     android:id="@+id/editText3"
+                     android:textAllCaps="false"
+                     android:textStyle="bold" />
+
+                 <EditText
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:inputType="textPersonName"
+                     android:text="Name"
+                     android:gravity="left"
+                     android:ems="10"
+                     android:textColor="@android:color/white"
+                     android:hint="@string/name_editText"/>
+
+             </TableRow>
+             <TableRow
                  android:layout_width="match_parent"
-                 android:layout_height="match_parent" />
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:inputType="textPersonName"
+                     android:text="Surname"
+                     android:textColor="@android:color/white"
+                     android:gravity="center"
+
+                     android:id="@+id/editText4"
+                     android:textAllCaps="false"
+                     android:textStyle="bold" />
+
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:inputType="textPersonName"
+                     android:text="Surname"
+                     android:ems="10"
+                     android:textColor="@android:color/white"
+                     android:gravity="left"
+                     android:hint="@string/surname_editText" />
+
+             </TableRow>
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:inputType="textPersonName"
+                     android:text="Surname"
+                     android:textColor="@android:color/white"
+                     android:gravity="center"
+                     android:hint="@string/nationality_editText"/>
+
+                 <CheckBox
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:inputType="textPersonName"
+                     android:text="UE Citizen"
+                     android:textColor="@android:color/white"
+                     android:id="@+id/inputName" />
+
+             </TableRow>
+
 
          </TableLayout>
     </ScrollView>
